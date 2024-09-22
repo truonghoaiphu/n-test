@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a969e156-279a-487c-9a2e-b00e38415a34",
+		"name": "NTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34183454",
+		"_collection_link": "https://gold-space-316879.postman.co/workspace/New-team~892c90a2-2b83-4bc6-b32d-2d56cca054e3/collection/34183454-a969e156-279a-487c-9a2e-b00e38415a34?action=share&source=collection_link&creator=34183454"
+	},
+	"item": [
+		{
+			"name": "uploadImage",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef78986-2ca1-4e30-958d-efbaccd11996"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/items/1/upload-image",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"items",
+						"1",
+						"upload-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
